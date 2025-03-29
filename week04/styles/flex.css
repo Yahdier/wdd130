@@ -1,0 +1,43 @@
+body { }
+
+.flex-container {
+    border: 3px dashed darkcyan;
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
+.flex item {
+    width: 250px;;
+    height: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 0.2);
+    padding: 0.5rem;
+    background-color: #bbb;
+    color: #333;
+}
+
+.item1 {
+    min-height: 100px;
+
+}
+
+.item2 {
+    min-height: 200px;
+}
+
+.item3 {
+    min-height: 300px;
+}
+
+section {
+    zoom: 0.8;
+}
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+}

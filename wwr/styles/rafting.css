@@ -1,129 +1,141 @@
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
+/* General Styles */
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    max-width: 1200px;
-    margin: 0 auto;
+    font-family: 'Lato', sans-serif; /* Body text uses Lato */
+    margin: 0;
     padding: 0;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  
+  /* Header */
+  header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
-    background-color: #7D7D7D;
-    padding: 10px 50px;
-}
-
-.hero {
-    position: relative;
-    background: url("../images/rafting3.png") no-repeat center center/cover;
-    height: 100vh;
+    background-color: #7D7D7D; /* Header background */
+    padding: 15px;
+    color: white; /* White text in header */
+    font-family: 'Roboto', sans-serif; /* Header uses Roboto */
+  }
+  
+  .logo img {
+    max-width: 100px;
+  }
+  
+  nav ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    font-family: "roboto", sans-serif;
-    font-size: 36px;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%);
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white; /* White links in header */
+    font-weight: bold;
+  }
+  
+  /* Intro Section */
+.intro {
     padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    width: 80%;
-    background-color: #7D7D7D;
-}
-
-.hero article img {
-    float: right;
-    margin-left: 20px;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-}
-
-section {
-    padding: 50px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.history {
-    padding: 50px;
+  }
+  
+  .intro h1 {
     text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e0e0e0; /* Common background color for both text and image */
+    padding: 20px;
+    border-radius: 8px; /* Optional: add rounded corners */
+  }
+  
+  .intro-text {
+    flex: 1;
+    padding-right: 20px; /* Adjust spacing as needed */
+  }
+  
+  .intro-image img {
+    max-width: 200px; /* Adjust size as needed */
+    width: 100%;
+    height: 100px;
+  }
+  /* History Section */
+  .history {
     background-color: #f4f4f4;
-}
-
-.adventure {
-    padding: 50px;
+    padding: 20px;
+    text-align: left;
+    /* Default text uses Lato (from body) */
+  }
+  
+  .history-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 0px;
+  }
+  
+  /* Center the history image */
+  .history img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Adventure Section */
+  .adventures {
     text-align: center;
-}
-
-.adventure img {
+    padding: 20px;
+  }
+  
+  .adventure-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  .adventure-gallery figure {
+    text-align: center;
+    max-width: 150px;
+  }
+  
+  .adventure-gallery img {
     width: 100%;
     height: auto;
-    margin: 10px 0;
-    border-radius: 10px;
-}
-
-.gallery img{
-    width: 200px;
-    height: auto;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-}
-
-.image {
-    text-align: center;
-}
-
-.image img {
-    width: 70%;
-    max-width: 600px;
-    border-radius: 5px;
-}
-
-.image p {
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-footer {
-    background-color: #7D7D7D;
-    text-align: left;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #7D7D7D; /* Footer background */
     padding: 20px;
-    color: white;
-}
-
-.social-media a img {
-    text-decoration: none;
-    border: none;
+    text-align: center;
+    position: relative;
+    color: white; /* White text in footer */
+    font-family: 'Roboto', sans-serif; /* Footer uses Roboto */
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .social-icons img {
     width: 30px;
-    margin: 5px;
-}
-
-:root {
-    --primary-color: #5000f0;
-    --secondary-color: #F5FD00;
-    --accent-color: #228B22;
-    --accent2-color: #7D7D7D;
-}
+    height: 30px;
+  }
+  
+  /* Titles (all heading elements) using Roboto */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+  }
