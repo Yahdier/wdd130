@@ -11,7 +11,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
-    background-color: #7D7D7D; /* Header background */
+    background-color: #F5FD00; /* Header background */
     padding: 15px;
     color: white; /* White text in header */
     font-family: 'Roboto', sans-serif; /* Header uses Roboto */
@@ -34,7 +34,7 @@ body {
   
   nav ul li a {
     text-decoration: none;
-    color: white; /* White links in header */
+    color: black; /* White links in header */
     font-weight: bold;
   }
   
@@ -151,11 +151,11 @@ body {
   
   /* Footer */
   footer {
-    background-color: #7D7D7D; /* Footer background */
+    background-color: #F5FD00; /* Footer background */
     padding: 20px;
     text-align: center;
     position: relative;
-    color: white; /* White text in footer */
+    color: black; /* White text in footer */
     font-family: 'Roboto', sans-serif; /* Footer uses Roboto */
   }
   
