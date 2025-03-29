@@ -68,29 +68,64 @@ body {
     width: 100%;
     height: 100px;
   }
+  
   /* History Section */
-  .history {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: left;
-    /* Default text uses Lato (from body) */
-  }
-  
-  .history-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.history {
+    padding: 40px 0; /* Adds vertical spacing */
+    text-align: center;
+}
+
+/* Center the title separately without background */
+.history h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Apply background to text and image only */
+.history-content {
+    background-color: #f4f4f4; /* Background color */
+    padding: 40px 5%; /* Extends close to the page borders */
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 0px;
-  }
-  
-  /* Center the history image */
-  .history img {
-    display: block;
+    gap: 30px;
+    max-width: 95%; /* Almost full width */
     margin: 0 auto;
+    flex-wrap: wrap; /* Allows elements to wrap on smaller screens */
+}
+
+/* Ensure text and image take equal space */
+.history-content p {
+    flex: 1;
+    text-align: justify;
+    font-size: 1.0em;
+    padding: 20px;
+    min-width: 250px; /* Prevents text from becoming too small */
+}
+
+/* Center the image and make it equal to text height */
+.history-content img {
+    flex: 1;
     max-width: 100%;
     height: auto;
-  }
-  
+    display: block;
+    object-fit: cover; /* Ensures better image fitting */
+    min-width: 250px; /* Prevents image from becoming too small */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .history-content {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center;
+    }
+
+    .history-content p {
+        text-align: center; /* Center text on small screens */
+    }
+}
+
   /* Adventure Section */
   .adventures {
     text-align: center;
