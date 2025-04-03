@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 130 | HTML Form - User Poll</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 130 | HTML Form - User Poll</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 <body>
-<header>
+  <header>
     <h1>WDD 130 | HTML Form - User Poll</h1>
-</header>
-<main>
+  </header>
+  <main>
     <form>
-        <!-- Contact Information Fieldset -->
-        <fieldset>
-          <legend>Contact Information</legend>
-          <!-- form elements will go here -->
-
+      <!-- Contact Information Fieldset -->
+      <fieldset>
+        <legend>Contact Information</legend>
+        <!-- Full Name Form Item -->
+        <div class="form-item column2">
           <label for="fullname">Full Name:</label>
           <input type="text" id="fullname" name="fullname">
-
-          <br></br>
-
+        </div>
+        <!-- Email Form Item -->
+        <div class="form-item column2">
           <label for="useremail">Email:</label>
           <input type="email" id="useremail" name="useremail">
-        </fieldset>
+        </div>
+      </fieldset>
 
-        <br>
-        
-        <!-- Questions Fieldset -->
-        <fieldset>
-            <legend>Questions</legend>
-            <!-- form elements will go here -->
+      <!-- Questions Fieldset -->
+      <fieldset>
+        <legend>Questions</legend>
+        <!-- Favorite Browser Form Item -->
+        <div class="form-item column1">
+          <label for="browser">What is your favorite internet browser?</label>
+          <select id="browser" name="browser">
+            <option value="chrome">Chrome</option>
+            <option value="firefox">Firefox</option>
+            <option value="safari">Safari</option>
+            <option value="edge">Edge</option>
+            <option value="brave">Brave</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <!-- Household Pet Form Item -->
+        <div class="form-item column1">
+          <label for="pet">Do you have a household pet?</label>
+          <input type="checkbox" id="pet" name="pet">
+        </div>
+        <!-- Places Lived Form Item -->
+        <div class="form-item">
+          <label for="feedback">List the places you have lived:</label>
+          <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+        </div>
+      </fieldset>
+      
+      <!-- Submit Button -->
+      <button type="submit">Submit Poll</button>
+    </form>
+  </main>
 
-            <label for="browser">What is your favorite internet browser?</label>
-            <select id="browser" name="browser">
-              <option value="chrome">Chrome</option>
-              <option value="firefox">Firefox</option>
-              <option value="safari">Safari</option>
-              <option value="edge">Edge</option>
-              <option value="brave">Brave</option>
-              <option value="other">Other</option>
-            </select>
-
-            <br></br>
-
-            <label for="pet">Do you have a household pet?</label>
-            <input type="checkbox" id="pet" name="pet">
-
-            <br></br>
-
-            <label for="feedback">List the places you have lived:</label>
-            <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
-          </fieldset>
-        
-        <br>
-        
-        <!-- Submit Button -->
-        <button type="submit">Submit Poll</button>
-      </form>
-</main>
-
-<footer>
+  <footer>
     <p>©2025 | HTML Form - User Poll Activity | Yahdier E. Díaz Santiago</p>
-</footer>
-
+  </footer>
 </body>
 </html>

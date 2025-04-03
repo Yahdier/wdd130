@@ -1,0 +1,129 @@
+/* 1. Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* 2. Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 3. Body Styling */
+body {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.2em;
+  color: #333;
+  background: #fff;
+}
+
+/* 4. Header and h1 Styling */
+header {
+  margin: 0 auto;
+  width: 650px;
+
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+  color: navy;
+  text-align: center;
+}
+
+/* 5. Form Styling */
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgba(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  background-color: #eee;
+  display: grid;
+}
+
+/* 6. Fieldset Styling */
+fieldset {
+  display: grid;
+  grid-gap: 0.5rem;
+  margin: 1rem;
+  border: 1px solid rgba(0 0 0 / 0.2);
+  padding: 1rem;
+}
+
+/* 7. Legend Styling */
+legend {
+  padding: 0.5rem;
+  color: navy;
+  font-size: 1.3em;
+}
+
+/* 8. Form Elements Styling */
+label, input, button, select, textarea {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* 9. Label Styling */
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+/* 10. Input, Select, and Textarea Styling */
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* 11. Checkbox Styling */
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+/* 12. Button Styling */
+button {
+  margin: 1rem 0;
+  background-color: navy;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+/* 13. Footer Styling */
+footer {
+  margin-top: 1rem auto;
+  width: 650px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #777;
+  border-top: 1px solid #ccc;
+}
+
+/* ---- Structuring the Div Containers ---- */
+
+/* 1. Form Item Styling */
+.form-item {
+  display: grid;
+  align-items: center;
+}
+
+/* 2. Column1 Layout */
+.column1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+}
+
+/* 3. Column2 Layout */
+.column2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0.5rem 0;
+}
