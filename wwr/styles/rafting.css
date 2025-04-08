@@ -1,176 +1,287 @@
 /* General Styles */
 body {
-    font-family: 'Lato', sans-serif; /* Body text uses Lato */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Header */
-  header {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-    background-color: #F5FD00; /* Header background */
-    padding: 15px;
-    color: white; /* White text in header */
-    font-family: 'Roboto', sans-serif; /* Header uses Roboto */
-  }
-  
-  .logo img {
-    max-width: 100px;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: black; /* White links in header */
-    font-weight: bold;
-  }
-  
-  /* Intro Section */
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  background-color: #F5FD00;
+  padding: 15px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Intro Section */
 .intro {
-    padding: 20px;
-  }
-  
-  .intro h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .intro-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #e0e0e0; /* Common background color for both text and image */
-    padding: 20px;
-    border-radius: 8px; /* Optional: add rounded corners */
-  }
-  
-  .intro-text {
-    flex: 1;
-    padding-right: 20px; /* Adjust spacing as needed */
-  }
-  
-  .intro-image img {
-    max-width: 200px; /* Adjust size as needed */
-    width: 100%;
-    height: 100px;
-  }
-  
-  /* History Section */
+  padding: 20px;
+}
+
+.intro h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.intro-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.intro-image img {
+  max-width: 200px;
+  width: 100%;
+  height: 100px;
+}
+
+/* History Section */
 .history {
-    padding: 40px 0; /* Adds vertical spacing */
-    text-align: center;
+  padding: 40px 0;
+  text-align: center;
 }
 
-/* Center the title separately without background */
 .history h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* Apply background to text and image only */
 .history-content {
-    background-color: #f4f4f4; /* Background color */
-    padding: 40px 5%; /* Extends close to the page borders */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    max-width: 95%; /* Almost full width */
-    margin: 0 auto;
-    flex-wrap: wrap; /* Allows elements to wrap on smaller screens */
+  background-color: #f4f4f4;
+  padding: 40px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 95%;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-/* Ensure text and image take equal space */
 .history-content p {
-    flex: 1;
-    text-align: justify;
-    font-size: 1.0em;
-    padding: 20px;
-    min-width: 250px; /* Prevents text from becoming too small */
+  flex: 1;
+  text-align: justify;
+  font-size: 1em;
+  padding: 20px;
+  min-width: 250px;
 }
 
-/* Center the image and make it equal to text height */
 .history-content img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover; /* Ensures better image fitting */
-    min-width: 250px; /* Prevents image from becoming too small */
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  min-width: 250px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
-    .history-content {
-        flex-direction: column; /* Stack items vertically on small screens */
-        text-align: center;
-    }
+  .history-content {
+      flex-direction: column;
+      text-align: center;
+  }
 
-    .history-content p {
-        text-align: center; /* Center text on small screens */
-    }
+  .history-content p {
+      text-align: center;
+  }
 }
 
-  /* Adventure Section */
-  .adventures {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .adventure-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-  }
-  
-  .adventure-gallery figure {
-    text-align: center;
-    max-width: 150px;
-  }
-  
-  .adventure-gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #F5FD00; /* Footer background */
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    color: black; /* White text in footer */
-    font-family: 'Roboto', sans-serif; /* Footer uses Roboto */
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-  }
-  
-  .social-icons img {
-    width: 30px;
-    height: 30px;
-  }
-  
-  /* Titles (all heading elements) using Roboto */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-  }
+/* Adventure Section */
+.adventures {
+  text-align: center;
+  padding: 20px;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+  text-align: center;
+  max-width: 150px;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #F5FD00;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* --- Contact Us Page Additions --- */
+
+.contact-title {
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 30px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Company Info */
+.company-info {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Map Section */
+.map {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  display: block;
+  border: none;
+}
+
+/* Employee Section */
+.employees {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.employees figure {
+  margin: 15px;
+}
+
+.employees img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Contact Form Section */
+.contact-form {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input[type="checkbox"] {
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.contact-form input[type="radio"] {
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.contact-form button {
+  background-color: #F5FD00;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #228B22;
+}
