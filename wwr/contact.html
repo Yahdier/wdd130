@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="White Water Rafting Team">
     <meta name="description" content="Get in touch with White Water Rafting. Find our contact info, meet our team, and send us your inquiries or suggestions through our contact form." />
     <title>Contact Us - White Water Rafting</title>
+    <!-- Google Fonts and CSS links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -73,9 +75,15 @@
                 <input type="email" id="email" name="email" required />
 
                 <p>Purpose of your message:</p>
-                <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label><br>
-                <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label><br>
-                <label><input type="radio" name="purpose" value="website" /> Website Suggestion</label>
+                <label for="general">
+                    <input type="radio" id="general" name="purpose" value="general" required> General Inquiry
+                </label><br>
+                <label for="reservation">
+                    <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question
+                </label><br>
+                <label for="website">
+                    <input type="radio" id="website" name="purpose" value="website"> Website Suggestion
+                </label>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5"></textarea>
