@@ -391,3 +391,77 @@ footer {
 .purpose-grid p {
   padding: 0 10px;
 }
+/* --- Trips page --- */
+.trips-cta {
+  text-align: center;
+  background-color: white;
+  padding: 40px 20px;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: white;
+}
+
+.trip-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip-card h3 {
+  margin: 15px 0 10px;
+}
+
+.trip-table-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.trip-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.trip-table th {
+  background-color: #F5FD00;
+}
+/* Footer */
+footer {
+  background-color: #F5FD00;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
